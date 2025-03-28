@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            width:300px;
+            height:300px;
+            background-color:cyan;
+            transition:1s ease-in-out 0.5s;
+            animation:changeshape 1s ease-in-out 0.5s 3;
+        }
+        .div:hover{
+            border-radius:50%;
+            transform:rotate(180deg) scale(0.5);
+
+        }
+        .div1{
+            width:300px;
+            height:300px;
+            background-color:green;
+            position:relative;
+            top:100px;
+            transition:1s ease-in ;
+        }
+        .div1:hover{
+            transform:scale(2) translate(450px);
+        }
+        .div2{
+            width:300px;
+            height:300px;
+            background-color:red;
+            position:absolute;
+            top:0px;
+            left:550px;
+            animation:change 4s ease-in-out 0.5s 10 alternate ;
+        }
+        @keyframes change{
+            from{
+                border-radius:0%;
+            }
+            20%{
+                border-radius:3.125%;
+            }
+            40%{
+                border-radius:6.25;
+            }
+            60%{
+                border-radius:12.5%;
+            }
+            80%{
+                border-radius:25%;
+            }
+            to{
+                border-radius:50%;
+            }
+        }
+        .div3{
+            width:300px;
+            height:300px;
+            background-color:red;
+            position:absolute;
+            top:400px;
+            left:550px;
+            animation:changename 5s ease-in-out 0.5s ;
+        }
+        @keyframes changename{
+            0%{
+                transform:translate(0,-120px);
+            }
+            25%{
+                transform:translate(0,0);
+            }
+            50%{
+                transform:translate(0,-60px);
+            }
+            100%{
+                transform:translate(0,0);
+            }
+        }
+        .div4{
+                width:300px;
+                height:300px;
+                background-color:orange;
+                position:absolute;
+                top:0px;
+                left:950px;
+                transition:1s ease-in-out 0.5s;
+            }
+        .div4:hover{
+            transform:rotate(540deg);
+        }
+        .div5{
+            width:300px;
+            height:300px;
+            background-color:blue;
+            position:absolute;
+            top:400px;
+            left:950px;
+            transition:1s ease-in-out  ;
+        }
+        .div5:hover{
+            border-radius:50%;
+            transform:rotate(540deg);
+        }
+        .div6{
+            position:absolute;
+            left:1400px;
+            top:0px;
+            background-color:brown;
+            width:300px;
+            height:300px;
+            animation-name:changeshape, reduce,rotate;
+            animation-duration: 1s,1s,1s;
+            animation-iteration-count:infinite,infinite,infinite;
+            animation-direction:alternate,alternate,alternate;
+            animation-timing-function:ease-in,ease-out,ease-in-out;
+        }
+        @keyframes changeshape{
+            0%{
+                border-radius:0;
+            }
+            25%{
+                border-radius:12.5%;
+            }
+            50%{
+                border-radius:25%;
+            }
+            100%{
+                border-radius:50%;
+            }
+        }
+        @keyframes rotate{
+             from{
+                 transform:rotate(0deg);
+             }
+             to{
+                 transform:rotate(360deg);
+             }
+        }
+        @keyframes reduce{
+            from{
+                height:300px;
+                width:300px;
+            }
+            to{
+                height:100px;
+                width:100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+</body>
+</html>

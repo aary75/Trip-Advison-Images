@@ -1,0 +1,130 @@
+#div{
+    border-bottom:1px solid grey;
+    padding-bottom:30px;
+    margin-bottom:2px;
+    margin-left:300px;
+}
+
+#myetext{
+    padding:6px;
+    border-radius:60px;
+    margin-top:8px;
+    margin-left:66px;
+    font-size:25px;
+    width:350px;
+    height:30px;
+}
+#nameweb{
+    font-weight:70%;
+    font-size:40px;
+    margin-top:8px;
+}
+.fa-heart{
+    margin-left:70px;
+}
+.corner{
+    font-weight:bolder;
+    font-size:30px;
+}
+
+
+/* main section */
+#review_center{
+    border-top:1px solid grey;
+    padding-top:10px;
+    background-color:rgb(241, 236, 236);
+}
+#heading1{
+    font-size:50px;
+    margin-left:540px;
+}
+.city{
+    width:400px;
+    height:35px;
+    font-size:20px;
+    align:center;
+    border-radius:30px;
+}
+#search{
+    margin-left:480px;
+}
+
+.city{
+    margin-left:8px;
+}
+.fa-pencil-alt{
+    margin-left:400px;
+}
+#heading2{
+    font-size:20px;
+    margin-left:350px;
+    font-weight:20px;
+    margin-top:40px;
+}
+
+.images1{
+    width:320px;
+    height:300px;
+    margin-left:350px;
+}
+.name{
+    position:absolute;
+    margin-left:30px;
+    margin-top:10px;
+    font-size:30px;
+    color:hsl(221, 73%, 54%);
+}
+.address{
+    font-size:18px;
+    color:grey;
+}
+.zoo{
+    display:inline-block;
+    width:1700px;
+    height:300px;
+    background-color:white;
+}
+.rock{
+    display:inline-block;
+    width:1700px;
+    height:300px;
+    background-color:white;
+}
+.suk{
+    display:inline-block;
+    width:1700px;
+    height:300px;
+    background-color:white;
+}
+
+.rock{
+    display:inline-block;
+    width:1700px;
+    height:300px;
+    background-color:white;
+}
+.suk{
+    display:inline-block;
+    width:1700px;
+    height:300px;
+    background-color:white;
+}
+
+.fa-circle{
+    color:green;
+}
+.field{
+    display:none;
+}
+.rate{
+    font-size:20px;
+    margin-left:10px;
+    color:green;
+}
+.rate:hover + .field{
+    display:block;
+    color:red;
+}
+.suk:hover{
+    box-shadow:1px rgb(46, 194, 194);
+}

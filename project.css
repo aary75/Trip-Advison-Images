@@ -1,0 +1,285 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+     align-items: center; 
+    padding: 0px 10px;
+    top:0px;
+    left:0px; 
+    height:15%;
+    width:100%;
+}
+
+/* Navigation: logo */
+#logo{
+   margin: 5px 20px;
+    }
+#logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px;
+}
+/* Navigation Bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.7rem;
+}
+#navbar ul li a{
+    color:whitesmoke;
+    display: block;
+    padding: 3px 33px;
+    text-decoration: none;
+    /* border-radius: 20px; */
+}
+#navbar ul li a:hover{
+    color: grey;
+    text-decoration: underline;
+}
+.btn{
+    font-size: 2rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin-top: 15px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+        text-decoration:underline;
+        color:black;
+        background-color:khaki;
+        border:black 2px solid;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    /* border: 2px solid orange; */
+    margin: -6px 0px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(/golden\ temple.jpg)no-repeat;
+    z-index: -1;
+    height:80%;
+    width: 100%;
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    animation-name: smile;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: 6;
+}
+@keyframes smile{
+    0%{
+        background: url(/enimation\ 1.jpeg);
+    }
+    25%{
+        background: url(/logo.jpeg);
+    }
+    50%{
+        background: url(/mosque.jpeg) center bottom/cover;
+    }
+    75%{
+        background: url(/nature.jpeg);
+    }
+    100%{
+        background: url(/mosque1.jpeg) center center/cover;
+    }
+}
+.h-primary{
+    color:rgb(253, 251, 251);
+    word-spacing: 10px;
+    font-size: 5rem;
+}
+
+#home p{
+    color: rgb(247, 245, 245);
+    text-align: center;
+    font-size: 2rem;
+}
+#hello{
+    z-index: -1;
+    opacity: 1;    
+    color: black;
+}
+/* services section */
+
+.services-container{
+    /* display: flex; */
+    /* background: radial-gradient(purple,white); */
+}
+
+.heading{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#services{
+    display: flex;
+    margin: 20px;
+}
+
+#services img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.box{
+    border: 4px solid brown;
+    width: 32%;
+    border-radius: 20px;
+    margin: 20px 30px;
+    background-color: #f2f2f2;
+    background: linear-gradient(lightgrey, white);
+}
+#heading{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.box p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* gallery section */
+
+.gallery{
+    background: linear-gradient(rgb(204, 97, 204),white,rgb(174, 93, 174));
+}
+
+.h-third{
+    text-align: center;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    color: rgb(17, 245, 248);
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+.gallery-images{
+    display: flex;
+    /* border: 2px solid red; */
+}
+.image1 img{
+    /* margin-top: 40px; */
+    border: 2px solid purple;
+    width: 35%px;
+    height: 500px;
+    margin: 40px 15px;
+} 
+.image2 img{
+    /* margin-top: 40px; */
+    border: 2px solid purple;
+    width: 450px;
+    height: 400px;
+    margin: 40px 15px;
+} 
+.image3 img{
+    /* margin-top: 40px; */
+    border: 2px solid purple;
+    width: 600px;
+    height: 500px;
+    margin: 40px 15px;
+} 
+.gimages{
+    display: flex;
+}
+.image4 img{
+    display: block;
+    /* margin-top: 40px; */
+    border: 2px solid purple;
+    width: 713px;
+    height: 500px;
+    margin: -15px 15px;
+    margin-bottom: 30px;
+} 
+.image6 img{
+    display: block;
+    /* margin-top: 40px; */
+    border: 2px solid purple;
+    width: 450px;
+    height: 595px;
+    margin: -110px 15px;
+    margin-bottom: 30px;
+} 
+.image5 img{
+    display: block;
+    /* margin-top: 40px; */
+    border: 2px solid purple;
+    width: 600px;
+    height: 500px;
+    margin: -16px 15px;
+    margin-bottom: 30px;
+} 
+
+/* contact section */
+#contact{
+     position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(/contact.jpeg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* border: 2px solid red; */
+}
+#contact-box label{
+    font-size: 1.3rem;
+    
+}
+.h-secondary{
+    color:black;
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 3rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 700px;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;   
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align:center;
+}

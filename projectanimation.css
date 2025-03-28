@@ -1,0 +1,47 @@
+#animation{
+    width:1000px;
+    height:1000px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:-6px 0px;
+    height:100px;
+
+}
+#animation::before{
+    content="";
+    background:url(/vashnodevi8.png);
+    position:absolute;
+    left:8px;
+    top:0px;
+    opacity:1;
+    z-index:-1;
+    width:80%;
+    height:100%;
+    animation-name:aaryan;
+    animation-iteration-count: infinite;
+    animation-duration:9s;
+    animation-timing-function:6;
+}
+}
+@keyframes aaryan{
+    0%{
+        background:url(/vashnodevi1.png);
+    }
+    20%{
+        background:url(/vashnodevi2.png);
+    }
+    40%{
+        background:url(/vashnodevi3.png);
+    }
+    60%{
+        background:url(/vashnodevi4.png);
+    }
+    80%{
+        background:url(/vashnodevi5.png);
+    }
+    100%{
+        background:url(/vashnodevi6.png);
+    }
+}

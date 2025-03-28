@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.2 linear;
+    text-transform: capitalize;
+    font-family: 'Bree Serif', serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* navbar section  */
+
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(191, 171, 171);
+    top: 0;
+    left: 0;
+    /* position: fixed; */
+    /* z-index: 1000; */
+}
+.logo{
+    font-size: 2rem;
+    margin: 2rem 1.5rem;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: rgb(6, 147, 248);
+    font-weight: 600;
+    /* margin-left: 1rem; */
+}
+.logo a i{
+    color: rgb(89, 155, 196);
+    margin-right: 12px;
+    /* padding-left: 390px; */
+
+}
+.nav{
+    font-size: 2.5rem;
+    margin: 2rem 1.5rem;
+    display: flex;
+    /* padding: 1rem 2rem; */
+}
+.nav a{
+    margin: 0 1.5rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 700;
+    /* border: 4px solid rgb(7, 248, 192); */
+    border-bottom: 6px solid rgb(6, 196, 248);
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    /* background: rgb(0, 255, 217); */
+    color: rgb(6, 147, 248);
+}
+.nav [class=home1]{
+    color: orange; 
+}
+/* home section  */
+ 
+.home{
+    /* content:"";
+    position: absolute;
+    top: 0;
+    left: 0;*/
+    /* z-index: 10000;  */
+    width: 100%;
+    height: 850px;
+    animation-name: parks;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: linear; */
+}
+
+@keyframes parks{
+    0%{
+        background: url(lonavala.png)no-repeat center bottom/cover;
+        
+    }
+    20%{
+        background: url(bir.png)no-repeat center center/cover;
+        height:1150px;
+    }
+    40%{
+        background: url(manali.png)no-repeat center center/cover;
+        height: 900px;
+    }
+    60%{
+        background: url(panchgani.png)no-repeat center top/cover;
+    }    
+    80%{
+        background: url(aulin7.png)no-repeat center center/cover;
+    }
+    100%{
+        background: url(adventure.png)no-repeat center center/cover;
+    }
+}
+.first{
+    font-size: 4rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 37%;
+    word-spacing: 5px;
+}
+.second{
+    font-size: 2rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 495px;
+    margin-left: 39.5%;
+    word-spacing: 5px;
+}
+.primary{
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 20%;
+    word-spacing: 5px;
+}
+.secondary{
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 20%;
+    word-spacing: 5px;
+    display: none;
+}
+.tertiary{
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 20%;
+    word-spacing: 5px;
+    display: none;
+}
+.fourth{
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 20%;
+    word-spacing: 5px;
+    display: none;
+}
+.fifth{
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 20%;
+    word-spacing: 5px;
+    display: none;
+}
+.sixth{
+    font-size: 6rem;
+    color: rgb(251, 253, 251);
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 20%;
+    word-spacing: 5px;
+    display: none;
+}
+
+.green:after{
+    color:rgb(0, 255, 225);
+    content: "";
+    animation-name: changetext;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: linear; */
+}
+
+@keyframes changetext{
+    0%{
+        content: "Lonavala";
+        color: red;
+    }
+    20%{
+        content: "Bir Billing";
+        color: chartreuse;
+    }
+    40%{
+        content: "Manali";
+        color: paleturquoise;
+    }
+    60%{
+        content: "Panchgani";
+        color: rgb(10, 241, 245);
+    }
+    80%{
+        content: "Auli";
+        color: rgb(43, 169, 18);
+    }
+    100%{
+        content: "Adventeous Places";
+    }
+}
+
+/* option section  */
+
+.option{
+    font-size: 3.5rem;
+    color: darkturquoise;
+    margin-top: 3.5rem;
+    text-align: center;
+    text-decoration: underline;
+    word-spacing: 5px;
+}
+
+.box1{
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 12rem;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 80%;
+}
+
+.image1{
+    border-radius: 1rem;
+    /* border: 5px solid brown; */
+    background: linear-gradient(white,lightgrey,white);
+    margin-right: 2.5rem;
+    padding: 2rem 1rem;
+}
+.image2{
+    border-radius: 1rem;
+    /* background: rgb(241, 240, 240); */
+    background: linear-gradient(white,lightgrey,white);
+    margin-left: 2.5rem;
+    padding: 2rem 1rem;
+}
+
+.box1 a img{
+    width: 85%;
+    height: 70%;
+    margin: 2rem 3rem ;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 50px;
+    margin-bottom: 1.5rem;
+}
+.one{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+}
+.box2{
+    margin-top: 8rem;
+    display: flex;
+    margin-left: 12rem;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 80%;
+}
+
+.image3{
+    border-radius: 1rem;
+    background: linear-gradient(white,lightgrey,white);
+    margin-right: 2.5rem;
+    padding: 2rem 1rem;
+}
+.image4{
+    border-radius: 1rem;
+    /* background: rgb(241, 240, 240); */
+    background: linear-gradient(white,lightgrey,white);
+    margin-left: 2.5rem;
+    padding: 2rem 1rem;
+}
+
+.box2 a img{
+    width: 85%;
+    height: 70%;
+    margin: 2rem 3rem ;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 50px;
+}
+.one{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+}
+
+/* middle portion */
+
+.bigimage{
+    /* width: 1800px; */
+    background: url(Main.webp)no-repeat center center/cover;
+    width: 100%;
+    height: 900px;
+    /* opacity: 0.8; */
+}
+.bigimage h1{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+.bigimage h2{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    word-spacing: 8px;
+    position: relative;
+    margin-top: 100px;
+    top: 35%;
+    left: 13%;
+}
+
+/* option section  */
+
+.box3{
+    margin-top: 8rem;
+    display: flex;
+    margin-left: 12rem;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 80%;
+}
+
+.image5{
+    border-radius: 1rem;
+    background: linear-gradient(white,lightgrey,white);
+    margin-right: 2.5rem;
+    padding: 2rem 1rem;
+    width: 60%;
+}
+.image6{
+    border-radius: 1rem;
+    /* background: rgb(241, 240, 240); */
+    background: linear-gradient(white,lightgrey,white);
+    margin-left: 2.5rem;
+    padding: 2rem 1rem;
+    width: 60%;
+}
+
+.box3 a img{
+    width: 85%;
+    height: 64%;
+    margin: 2rem 3rem ;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 50px;
+}
+.one{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+}
+
+.box4{
+    margin-top: 8rem;
+    display: flex;
+    margin-left: 12rem;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 80%;
+}
+
+.image7{
+    border-radius: 1rem;
+    background: linear-gradient(white,lightgrey,white);
+    margin-right: 2.5rem;
+    padding: 2rem 1rem;
+    width: 60%;
+}
+.image8{
+    border-radius: 1rem;
+    /* background: rgb(241, 240, 240); */
+    background: linear-gradient(white,lightgrey,white);
+    margin-left: 2.5rem;
+    padding: 2rem 1rem;
+    width: 60%;
+}
+
+.box4 a img{
+    width: 85%;
+    height: 70%;
+    margin: 2rem 3rem ;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-right: 50px;
+}
+.one{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+}

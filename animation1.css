@@ -1,0 +1,18 @@
+#keyframes{
+    width:100px;
+    height:100px;
+    background-color:green;
+    position:absolute;
+    animation:aaryan 10s 4;
+    animation-timing-function:ease-in;
+    animation-fill-mode:both;
+    animation-direction:alternate-reverse;
+}
+@keyframes aaryan{
+    from{top:0px;width:200px;height:200px;}
+    to{top:300px;width:400px;height:400px;}
+    0%{background-color:red;}
+    25%{background-color:blue;}
+    50%{background-color:cyan;}
+    100%{background-color:brown;}
+}
